@@ -11,12 +11,13 @@ const ServicesPage: React.FC = () => {
       </header>
 
       {/* 2. List of Services */}
+      
       <section className="max-w-6xl mx-auto py-12 px-6">
         <h2 className="text-3xl font-semibold mb-8">What I Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-gray-400 bg-opacity-40 shadow-lg p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Website Development</h3>
-            <p>I build custom, responsive websites that look great on any device, using modern tools and techniques.</p>
+          <div className="bg-gray-400 bg-opacity-40 shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <h3 className="text-xl text-white font-semibold mb-2">Website Development</h3>
+            <p className='text-white'>I build custom, responsive websites that look great on any device, using modern tools and techniques.</p>
           </div>
           <div className="bg-white shadow-lg p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-2">Web Application Development</h3>

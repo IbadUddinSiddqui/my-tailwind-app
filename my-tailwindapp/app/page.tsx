@@ -8,9 +8,13 @@ export default function Home() {
   <>
   <Header />
   <HeroSection1 />
+   
+  
   <HeroSection2/>
   <HeroSection3/>
   <Footer />
+
   </>
-  )
+)
+  
 }
