@@ -2,8 +2,8 @@
 export default function HeroSection1(){
     return (
         <>
-        <section className="  h-screen bg-cover bg-center flex flex-col justify-center items-center text-white  "
-        style={{   backgroundImage: "url('/images/background3.jpg')" }} >
+        <section className=" bg-transparent  h-screen bg-cover bg-center flex flex-col justify-center items-center text-white  "
+         >
   <div className="flex flex-col  w-full justify-center items-center h-full bg-black bg-opacity-50 text-white p-4 ">
     
   <div className="relative z-10 text-center px-6">
@@ -25,14 +25,14 @@ export default function HeroSection1(){
 
         {/* Social Media Links */}
         <div className="flex space-x-6">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
+          <a href="https://github.com/IbadUddinSiddqui" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
+          <a href="https://www.linkedin.com/in/ibad-uddin-856276259/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
             LinkedIn
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
-            Twitter
+          <a href="https://instagram.com/ibad_uddin" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
+            Instagram
           </a>
         </div>
       </div>
