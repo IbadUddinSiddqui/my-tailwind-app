@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Header from '../components/Header/Header';
 
 const ServicesPage: React.FC = () => {
@@ -20,6 +21,7 @@ const ServicesPage: React.FC = () => {
         <h2 className="text-3xl font-semibold mb-8">What I Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <p><Image src='/images/web-dev.png' alt='Web Development' width={350} height ={150}  /></p>``
             <h3 className="text-xl font-semibold mb-2">Website Development</h3>
             <p>I build custom, responsive websites that look great on any device, using modern tools and techniques.</p>
           </div>
@@ -27,7 +29,7 @@ const ServicesPage: React.FC = () => {
             <h3 className="text-xl font-semibold mb-2">Web Application Development</h3>
             <p>Creating full-featured web apps using React, Next.js, and other top frameworks.</p>
           </div>
-          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparentshadow-lg p-6 rounded-lg hover:shadow-slate-100">
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
             <h3 className="text-xl font-semibold mb-2">E-Commerce Solutions</h3>
             <p>Secure and scalable e-commerce websites built with Shopify or custom solutions.</p>
           </div>
@@ -53,14 +55,14 @@ const ServicesPage: React.FC = () => {
           I work with the latest technologies to build high-quality web solutions.
         </p>
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 ">
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">HTML5</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">CSS3</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">JavaScript</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">TypeScript</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">React</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">Next.js</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">Node.js</span>
-          <span className="text-xl bg-black bg-opacity-80 shadow-lg p-3 rounded-lg hover:shadow-slate-100">Tailwind CSS</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">HTML5</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">CSS3</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">JavaScript</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">TypeScript</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">React</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">Next.js</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">Node.js</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">Tailwind CSS</span>
         </div>
       </section>
 
@@ -68,11 +70,11 @@ const ServicesPage: React.FC = () => {
       <section className="max-w-6xl mx-auto py-12 px-6">
         <h2 className="text-3xl font-semibold mb-8">My Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-black bg-opacity-80 shadow-lg p-6 rounded-lg hover:shadow-slate-100 ">
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 ">
             <h3 className="text-xl font-semibold mb-2 ">E-commerce Platform</h3>
             <p>Built a fully functional e-commerce platform with Shopify integration and custom features.</p>
           </div>
-          <div className="bg-black bg-opacity-80 shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
             <h3 className="text-xl font-semibold mb-2">Web Application for Analytics</h3>
             <p>Developed a React-based app for real-time data analytics.</p>
           </div>
