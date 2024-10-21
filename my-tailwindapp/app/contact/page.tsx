@@ -2,7 +2,7 @@
 "use client"; // This must be the first line of the file
 
 import React, { useState } from 'react';
-
+import Header from '../components/Header/Header';
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -29,7 +29,9 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="p-8 max-w-md mx-auto bg-white rounded-lg shadow-md">
+    <>
+    <Header/>
+    <div className="p-8 max-w-md mt-24 mx-auto bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -91,7 +93,7 @@ const Contact: React.FC = () => {
         </button>
       </form>
     </div>
-  );
+    </>  );
 };
 
 export default Contact;

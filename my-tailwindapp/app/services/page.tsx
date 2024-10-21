@@ -21,32 +21,32 @@ const ServicesPage: React.FC = () => {
         <h2 className="text-3xl font-semibold mb-8">What I Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-[#2d67cd] flex-inline bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-            <p><Image src='/images/web-dev.png' alt='Web Development' width={200} height ={150} className='mx-auto'  /></p>
+            <p><Image src='/images/web-dev.png' alt='Web Development' width={200} height ={150} className='mx-auto my-auto'  /></p>
             <h3 className="text-xl font-semibold mb-2">Website Development</h3>
             <p>`I build custom, responsive websites that look great on any device, using modern tools and techniques.`</p>
           </div>
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-          <p><Image src='/images/web-app.png' alt='Web App Development' width={200} height ={150} className='mx-auto'  /></p>
+          <p><Image src='/images/web-app.png' alt='Web App Development' width={200} height ={150} className='mx-auto my-auto'  /></p>
             <h3 className="text-xl font-semibold mb-2">Web Application Development</h3>
             <p>Creating full-featured web apps using React, Next.js, and other top frameworks.</p>
           </div>
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-             <p><Image src='/images/e-com.png' alt='E-commerce' width={250} height ={150} className='mx-auto'  /></p>
-            <h3 className="text-xl font-semibold mb-2">E-Commerce Solutions</h3>
+             <p><Image src='/images/e-com.png' alt='E-commerce' width={250} height ={150} className='mx-auto my-auto'  /></p>
+            <h3 className="text-xl font-semibold mb-2 mt-12">E-Commerce Solutions</h3>
             <p>Secure and scalable e-commerce websites built with Shopify or custom solutions.</p>
           </div>
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-             <p><Image src='/images/uiux.png' alt='Web Development' width={200} height ={150} className='mx-auto'  /></p>
-            <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
+             <p><Image src='/images/uiux.png' alt='Web Development' width={200} height ={150} className='mx-auto my-auto'  /></p>
+            <h3 className="text-xl font-semibold mb-2 mt-8">UI/UX Design</h3>
             <p>Beautiful and user-friendly interfaces designed to improve user engagement.</p>
           </div>
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-             <p><Image src='/images/seo.png' alt='Web Development' width={200} height ={150} className='mx-auto'  /></p>
+             <p><Image src='/images/seo.png' alt='Web Development' width={200} height ={150} className='mx-auto my-auto'  /></p>
             <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
             <p>Using SEO best practices to help your site rank better in search engines.</p>
           </div>
           <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-             <p><Image src='/images/main&supp.png' alt='Web Development' width={200} height ={150} className='mx-auto'  /></p>
+             <p><Image src='/images/main&supp.png' alt='Web Development' width={200} height ={150} className='mx-auto my-auto'  /></p>
             <h3 className="text-xl font-semibold mb-2">Maintenance & Support</h3>
             <p>Ongoing support and updates to keep your site running smoothly.</p>
           </div>
@@ -60,14 +60,14 @@ const ServicesPage: React.FC = () => {
           I work with the latest technologies to build high-quality web solutions.
         </p>
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6 ">
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />HTML5</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' /> CSS3</span> 
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />JavaScript</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />TypeScript</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />React</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />Next.js</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />Node.js</span>
-          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto' />Tailwind CSS</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />HTML5</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' /> CSS3</span> 
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />JavaScript</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />TypeScript</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />React</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />Next.js</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />Node.js</span>
+          <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"> <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="hi" width={200} height={200} className='mx-auto my-auto my-auto' />Tailwind CSS</span>
         </div>
       </section>
 
@@ -85,8 +85,11 @@ const ServicesPage: React.FC = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* 5. Process Section */}
+      <div className='bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg min-w-full m-0 '>
+      <Image src='/images/ani.gif' alt='Web Development' width={200} height ={150} className='inline m-0 p-0'  />
       <section className="bg-transparent py-12 ">
         <h2 className="text-3xl font-semibold text-center mb-6 text-white ">My Process</h2> {/* Changed heading text to white */}
         <div className="max-w-4xl mx-auto space-y-4 text-center text-lg text-white  "> {/* Changed body text to white */}
@@ -135,7 +138,7 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* 11. Contact Form */}
-      <section className="  bg-black bg-opacity-80 py-12 text-center rounded-xl p-8">
+      <section className="  bg-black bg-opacity-80 py-12 text-center rounded-xl p-8 ">
         <h2 className="text-3xl  font-semibold mb-6 text-white">Get in Touch</h2> {/* Changed heading text to white */}
         <form className="max-w-xl mx-auto space-y-4">
           <input type="text" placeholder="Your Name" className="w-full p-3 border rounded" />
@@ -146,7 +149,8 @@ const ServicesPage: React.FC = () => {
           </button>
         </form>
       </section>
-    </div>
+      </div>
+   
     </>  );
 }
 
