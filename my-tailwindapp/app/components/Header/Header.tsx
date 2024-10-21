@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 export default function Header() {
     return (
@@ -8,6 +9,9 @@ export default function Header() {
               <Link href={'/about'}>  <li className=" hover:text-blue-500  hover:bg-white hover:rounded-full py-2 px-3">About</li></Link>
                 <Link href={'/contact'}><li className=" hover:text-blue-500  hover:bg-white hover:rounded-full py-2 px-3">Contact</li></Link>
                 <Link href={'services'}> <li className=" hover:text-blue-500  hover:bg-white hover:rounded-full py-2 px-3">Services</li></Link>
+                
+            
+          
             </ul>  
         </nav> 
         </header>
