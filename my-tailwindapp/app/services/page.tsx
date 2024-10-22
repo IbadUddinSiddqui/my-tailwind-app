@@ -196,13 +196,13 @@ const ServicesPage: React.FC = () => {
     <div className="contact-card ">
       <h2 className='text-white'>Ibad Uddin</h2>
       <p>
-        📧 <strong className='text-white' >Email:</strong> <a  className='text-blue-500' href="mailto:ibad@example.com">ibad@example.com</a>
+        📧 <strong className='text-white' >Email:</strong> <a  className='text-blue-500' href="mailto:ibaduddinsiddiqui418@gmail.com">ibaduddinsiddiqui418@gmail.com</a>
       </p>
       <p>
         📱 <strong className='text-white' >Phone:</strong> <a  className='text-blue-500' href="tel:+92335394836">+92 335 394836</a>
       </p>
       <p>
-        🔗 <strong className='text-white' >LinkedIn:</strong> <a className='text-blue-500' href="https://www.linkedin.com/in/ibaduddin" target="_blank" rel="noopener noreferrer">linkedin.com/in/ibaduddin</a>
+        🔗 <strong className='text-white' >LinkedIn:</strong> <a className='text-blue-500' href="https://www.linkedin.com/in/ibad-uddin-856276259/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ibaduddin</a>
       </p>
       <p>
         📍 <strong className='text-white '>Location:</strong> <p className='text-blue-500'>Karachi, Pakistan</p>
@@ -215,4 +215,4 @@ const ServicesPage: React.FC = () => {
   </>) ;
 }
 
-export default ServicesPage;
+export default ServicesPage;6
