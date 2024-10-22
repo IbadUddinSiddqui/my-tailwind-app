@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Header from '../components/Header/Header';
+import PricingCard from '../components/PricingCard/PricingCard';
+import FaqCard from '../components/FaqCard/FaqCard';
+import TestimonialSection from '../components/TestimonialSection/TestimonialSection';
+
 
 const ServicesPage: React.FC = () => {
   return (
@@ -89,34 +93,62 @@ const ServicesPage: React.FC = () => {
 
       {/* 5. Process Section */}
       <div className='bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg min-w-full m-0 '>
-      <Image src='/images/ani.gif' alt='Web Development' width={200} height ={150} className='inline m-0 p-0'  />
-      <section className="bg-transparent py-12 ">
-        <h2 className="text-3xl font-semibold text-center mb-6 text-white ">My Process</h2> {/* Changed heading text to white */}
-        <div className="max-w-4xl mx-auto space-y-4 text-center text-lg text-white  "> {/* Changed body text to white */}
-          <p><strong>1. Discovery:</strong> I start by understanding your business needs and goals.</p>
-          <p><strong>2. Planning:</strong> I create a project plan that outlines the roadmap.</p>
-          <p><strong>3. Design:</strong> Wireframes and UI design to visualize the project.</p>
-          <p><strong>4. Development:</strong> I build the project using the latest web technologies.</p>
-          <p><strong>5. Testing & Launch:</strong> I ensure your site works perfectly before launching.</p>
-        </div>
-      </section>
+      <section className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg py-12 rounded-lg  hover-shadow-slate-100 inline-block m-auto p-auto">
+      <h2 className="text-3xl font-semibold text-center mb-6 text-white">
+        My Process
+      </h2>
+      <div className="max-w-4xl mx-auto space-y-4 text-center text-lg text-white p-6 bg-opacity-75 rounded-lg">
+        <p>
+          <strong>1. Discovery:</strong> I start by understanding your business needs and goals.
+        </p>
+        <p>
+          <strong>2. Planning:</strong> I create a project plan that outlines the roadmap.
+        </p>
+        <p>
+          <strong>3. Design:</strong> Wireframes and UI design to visualize the project.
+        </p>
+        <p>
+          <strong>4. Development:</strong> I build the project using the latest web technologies.
+        </p>
+        <p>
+          <strong>5. Testing & Launch:</strong> I ensure your site works perfectly before launching.
+        </p>
+      </div>
+    </section>
 
       {/* 6. Why Choose Me */}
-      <section className="max-w-6xl mx-auto py-12 px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Why Choose Me?</h2>
-        <p className="text-lg">I provide high-quality web solutions with a client-focused approach, ensuring timely delivery and great communication.</p>
-      </section>
+      <section className="bg-transparent py-10">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-6 text-white">Why Choose Me?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <h3 className="text-xl  text-white font-semibold mb-4">Expertise</h3>
+            <p className="text-white">
+              I have a strong foundation in web development, specializing in JavaScript, TypeScript, and React.
+            </p>
+          </div>
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <h3 className="text-xl text-white  font-semibold mb-4">Problem-Solving</h3>
+            <p className="text-white">
+              I excel at identifying problems and implementing efficient solutions, ensuring a smooth user experience.
+            </p>
+          </div>
+          <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <h3 className="text-xl text-white  font-semibold mb-4">Passion</h3>
+            <p className="text-white">
+              I am passionate about continuous learning and staying updated with the latest industry trends and technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* 7. Testimonials/Reviews */}
-      <section className="bg-transparent py-12 text-center">
-        <h2 className="text-3xl font-semibold mb-6 text-white">What Clients Say</h2> {/* Changed heading text to white */}
-        <p className="max-w-3xl mx-auto text-lg text-white">&quot;Ibad did an amazing job on our company website. He was responsive and delivered exactly what we needed.&quot;</p> {/* Changed body text to white */}
-      </section>
-
+      <TestimonialSection/>
       {/* 8. Pricing */}
-      <section className="max-w-6xl mx-auto py-12 px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Pricing</h2>
-        <p className="text-lg">I offer competitive pricing for custom web development projects starting at $500.</p>
+      <section className=" text-white max-w-6xl mx-auto py-12 px-6 text-center">
+       < PricingCard/>
+
       </section>
 
       {/* 9. Call to Action */}
@@ -129,12 +161,8 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* 10. FAQ */}
-      <section className="max-w-6xl mx-auto py-12 px-6">
-        <h2 className="text-3xl font-semibold mb-8 text-center">Frequently Asked Questions</h2>
-        <div className="space-y-4 text-lg">
-          <p><strong>Q: How long does a typical project take?</strong> A: It depends on the complexity of the project, but most websites are completed within 4-6 weeks.</p>
-          <p><strong>Q: Do you offer maintenance after launch?</strong> A: Yes, I offer ongoing maintenance services.</p>
-        </div>
+      <section className="max-w-6xl mx-auto py-12 px-6 text-white">
+       <FaqCard></FaqCard>
       </section>
 
       {/* 11. Contact Form */}
