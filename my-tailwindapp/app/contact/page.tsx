@@ -1,19 +1,22 @@
-// app/contact/page.tsx
-"use client"; // This must be the first line of the file
+"use client"; // Required for client-side rendering
 
 import React, { useState } from 'react';
-import Header from '../components/Header/Header';
+
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const res = await fetch('/api/send-email', {
+
+    // Reset the status message
+    setStatusMessage('');
+
+    const response = await fetch('/api/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -21,18 +24,22 @@ const Contact: React.FC = () => {
       body: JSON.stringify({ name, email, phone, subject, message }),
     });
 
-    if (res.ok) {
-      console.log('Email sent successfully');
+    if (response.ok) {
+      setStatusMessage('Email sent successfully!');
+      setName('');
+      setEmail('');
+      setPhone('');
+      setSubject('');
+      setMessage('');
     } else {
-      console.error('Failed to send email');
+      setStatusMessage('Failed to send email.');
     }
   };
 
   return (
-    <>
-    <Header/>
-    <div className="p-8 max-w-md mt-24 mx-auto bg-white rounded-lg shadow-md">
+    <div className="p-8 max-w-md mx-auto bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+      {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-2" htmlFor="name">Name</label>
@@ -57,10 +64,10 @@ const Contact: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-2" htmlFor="phone">Phone (optional)</label>
+          <label className="block mb-2" htmlFor="phone">Phone</label>
           <input
             className="w-full p-2 border border-gray-300 rounded"
-            type="text"
+            type="tel"
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -86,14 +93,17 @@ const Contact: React.FC = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-          ></textarea>
+          />
         </div>
-        <button className="w-full p-2 bg-blue-500 text-white rounded" type="submit">
+        <button
+          className="w-full p-2 bg-blue-500 text-white rounded"
+          type="submit"
+        >
           Send Message
         </button>
       </form>
     </div>
-    </>  );
+  );
 };
 
 export default Contact;

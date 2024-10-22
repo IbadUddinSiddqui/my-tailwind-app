@@ -1,10 +1,12 @@
 // app/api/send-email/route.ts
-'use client';
 import { NextResponse } from 'next/server';
-import Resend from 'resend';
+import Resend from 'resend'; // Import directly (assuming default export)
 
+const apiKey = process.env.RESEND_API_KEY;
 
-const resend  = new Resend('re_6TKq8Md2_JMXiyBdJkh8oQ2xAj7sDGn7t')  ; // Ensure you have your API key set in your environment variables
+if (!apiKey) {
+  throw new Error('Missing RESEND_API_KEY in environment variables');
+}
 
 export async function POST(request: Request) {
   const { name, email, phone, subject, message } = await request.json();
@@ -15,10 +17,10 @@ export async function POST(request: Request) {
   }
 
   try {
-    // Send email using Resend
-    await resend.sendEmail({
-      from: email, // Your sender email
-      to: 'ibaduddinsiddiqui418gmail.com', // You can also send to your own email
+    // Directly use the Resend function to send the email
+    await Resend.sendEmail({
+      from: email,
+      to: 'ibaduddinsiddiqui418@gmail.com',
       subject: subject,
       html: `<p>You have a new contact request.</p>
              <p><strong>Name:</strong> ${name}</p>
@@ -29,6 +31,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: 'Email sent successfully!' });
   } catch (error) {
     console.error('Error sending email:', error);
-    return NextResponse.json({ error: 'Failed to send email.' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to send email.', details: error.message }, { status: 500 });
   }
 }
