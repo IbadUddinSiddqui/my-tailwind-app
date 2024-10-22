@@ -23,12 +23,12 @@ export default function HeroSection1() {
             </a>
 
             {/* Social Media Links */}
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 mt-5">
               <a
                 href="https://github.com/IbadUddinSiddqui"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-blue-400"
+                className="text-white -mt-[5px] hover:text-blue-400"
               >
                 <Image
                   src="/images/git.png"
@@ -57,7 +57,7 @@ export default function HeroSection1() {
                 href="https://www.linkedin.com/in/ibad-uddin-856276259/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-blue-400 hover:shadow-indigo-600 shadow-xl"
+                className="text-white hover:text-blue-400 hover:shadow-indigo-600 "
               >
                 <Image
                   src="/images/in.png"

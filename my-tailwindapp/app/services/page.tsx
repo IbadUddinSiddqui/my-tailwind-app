@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import PricingCard from '../components/PricingCard/PricingCard';
 import FaqCard from '../components/FaqCard/FaqCard';
 import TestimonialSection from '../components/TestimonialSection/TestimonialSection';
+import Footer from '../components/Footer/Footer';
 
 
 const ServicesPage: React.FC = () => {
@@ -209,7 +210,8 @@ const ServicesPage: React.FC = () => {
     </div> </div></div>
    
 
-/</div>
+</div>
+<Footer/>
   </>) ;
 }
 

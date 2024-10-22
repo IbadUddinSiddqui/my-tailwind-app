@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -105,6 +106,7 @@ const Contact: React.FC = () => {
         </button>
       </form>
     </div>
+    <Footer/>
     </>  );
 };
 
