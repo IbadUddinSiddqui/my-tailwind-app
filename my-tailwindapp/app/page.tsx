@@ -6,14 +6,12 @@ import HeroSection2 from "./components/HeroSections/HeroSection2/HeroSection2";
 import HeroSection3 from "./components/HeroSections/HeroSection3/HeroSection3";
 export default function Home() {
   return (
-  <>
-  <Header />
- <HeroSection1/>  
-  <HeroSection2/>
-  <HeroSection3/>
-  <Footer />
-
-  </>
-)
+    <>
+    <Header />
+    <HeroSection1/>  
+     <HeroSection2/>
+     <HeroSection3/>
+     <Footer />
+     </> )
   
 }

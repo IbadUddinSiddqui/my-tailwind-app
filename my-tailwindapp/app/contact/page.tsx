@@ -1,7 +1,7 @@
 "use client"; // Required for client-side rendering
 
 import React, { useState } from 'react';
-
+import Header from '../components/Header/Header';
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,8 +37,10 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="p-8 max-w-md mx-auto bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+    <>
+    <Header/>
+    <div className="p-8 max-w-md mx-auto mt-24 bg-white rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
       {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -103,7 +105,7 @@ const Contact: React.FC = () => {
         </button>
       </form>
     </div>
-  );
+    </>  );
 };
 
 export default Contact;
