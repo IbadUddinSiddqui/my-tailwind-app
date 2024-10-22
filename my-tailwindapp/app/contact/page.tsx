@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
   return (
     <>
     <Header/>
-    <div className="p-8 max-w-md mx-auto mt-24 bg-white rounded-lg shadow-md">
+    <div className="p-8 max-w-md mx-auto mt-24 mb-24 bg-white rounded-lg shadow-md">
       <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
       {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
       <form onSubmit={handleSubmit}>
@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
       </form>
     </div>
     <Footer/>
-    </>  );
+ </>  );
 };
 
 export default Contact;
