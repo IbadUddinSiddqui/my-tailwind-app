@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -39,75 +40,76 @@ const Contact: React.FC = () => {
 
   return (
     <>
-    <Header/>
-    <div className="p-8 max-w-md mx-auto mt-24 mb-24 bg-white rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
-      {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="name">Name</label>
-          <input
-            className="w-full p-2 border border-gray-300 rounded"
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="email">Email</label>
-          <input
-            className="w-full p-2 border border-gray-300 rounded"
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="phone">Phone</label>
-          <input
-            className="w-full p-2 border border-gray-300 rounded"
-            type="tel"
-            id="phone"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="subject">Subject</label>
-          <input
-            className="w-full p-2 border border-gray-300 rounded"
-            type="text"
-            id="subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="message">Message</label>
-          <textarea
-            className="w-full p-2 border border-gray-300 rounded"
-            id="message"
-            rows={4}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        <button
-          className="w-full p-2 bg-blue-500 text-white rounded"
-          type="submit"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-    <Footer/>
- </>  );
+      <Header />
+      <div className="px-4 py-6 mx-auto max-w-lg mt-12 mb-12 bg-white rounded-lg shadow-md sm:px-6 md:px-8 lg:px-12 md:mt-20 md:mb-20">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-black text-center">Contact Us</h2>
+        {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-800 mb-2 text-sm sm:text-base" htmlFor="name">Name</label>
+            <input
+              className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-800 mb-2 text-sm sm:text-base" htmlFor="email">Email</label>
+            <input
+              className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-800 mb-2 text-sm sm:text-base" htmlFor="phone">Phone</label>
+            <input
+              className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="tel"
+              id="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-800 mb-2 text-sm sm:text-base" htmlFor="subject">Subject</label>
+            <input
+              className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              type="text"
+              id="subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-800 mb-2 text-sm sm:text-base" htmlFor="message">Message</label>
+            <textarea
+              className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              id="message"
+              rows={4}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+          </div>
+          <button
+            className="w-full p-2 sm:p-3 bg-blue-500 hover:bg-blue-600 text-white rounded transition-all"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Contact;
