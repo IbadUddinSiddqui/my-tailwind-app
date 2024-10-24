@@ -16,10 +16,10 @@ const ServicesPage: React.FC = () => {
       <div className="min-h-screen bg-transparent m-14 text-white">  {/* Changed overall text to white */}
 
         {/* 1. Headline / Introduction */}
-        <header className="text-center py-16 bg-transparent">
-          <h1 className="text-5xl font-bold ">My Web Development Services</h1>
-          <p className="text-lg mt-4">Custom Websites, Web Apps, UI/UX Design, and more!</p>
-        </header>
+<header className="text-center py-16 bg-transparent">
+  <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">My Web Development Services</h1>
+  <p className="text-lg mt-4 sm:text-xl">Custom Websites, Web Apps, UI/UX Design, and more!</p>
+</header>
 
         {/* 2. List of Services */}
         <section className="max-w-6xl mx-auto py-12 px-6">
@@ -57,7 +57,7 @@ const ServicesPage: React.FC = () => {
             </div>
           </div>
         </section>
-
+{/* done here */}
         {/* 3. Technologies & Tools */}
         <section className="bg-transparent py-12 text-center">
           <h2 className="text-3xl font-semibold mb-4">Technologies I Use</h2>
