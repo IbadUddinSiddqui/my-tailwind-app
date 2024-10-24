@@ -26,7 +26,7 @@ const TestimonialSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
-                <p className="text-gray-100 text-lg italic">"{testimonial.quote}"</p>
+                <p className="text-gray-100 text-lg italic">{testimonial.quote}</p>
                 <footer className="mt-4">
                   <h4 className="font-semibold text-lg text-gray-100">{testimonial.name}</h4>
                   <p className="text-gray-100">{testimonial.role}</p>

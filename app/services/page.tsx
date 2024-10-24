@@ -167,10 +167,10 @@ const ServicesPage: React.FC = () => {
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">
-            Let's find more that brings us together.
+            Lets find more that brings us together.
           </h2>
           <p className="mb-8 font-light text-white sm:text-xl dark:text-gray-400">
-          Let's connect and create something amazing together! Whether you're into building innovative projects, sharing ideas, or brainstorming the next big thing, I'm all in. Let's collaborate, explore new possibilities, and turn creative dreams into reality. Ready to start something crazy? Let's go!
+          Lets connect and create something amazing together! Whether youre into building innovative projects, sharing ideas, or brainstorming the next big thing, Im all in. Lets collaborate, explore new possibilities, and turn creative dreams into reality. Ready to start something crazy? Lets go!
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
            
@@ -215,4 +215,4 @@ const ServicesPage: React.FC = () => {
   </>) ;
 }
 
-export default ServicesPage;6
+export default ServicesPage;

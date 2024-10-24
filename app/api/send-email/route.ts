@@ -39,8 +39,14 @@ export async function POST(request: Request) {
     // Return a success response
     return NextResponse.json({ message: 'Email sent successfully!', data });
   } catch (error) {
-    // Log and return error
-    console.error('Error sending email:', error);
-    return NextResponse.json({ error: 'Failed to send email.', details: error.message }, { status: 500 });
-  }
-}
+   // Log and return error
+  console.error('Error sending email:', error);
+
+  // Cast the error to `Error` to safely access the message property
+  const errorMessage = (error as Error).message || 'Unknown error';
+
+  return NextResponse.json(
+    { error: 'Failed to send email.', details: errorMessage },
+    { status: 500 }
+  );
+} }
