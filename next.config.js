@@ -1,8 +1,5 @@
-// next.config.js
-import { config } from 'dotenv';
-
-// Load environment variables from .env file
-config();
+// Import dotenv dynamically with ES module syntax
+import('dotenv').then(({ config }) => config());
 
 // Create a configuration object
 const nextConfig = {
