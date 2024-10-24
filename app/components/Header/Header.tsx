@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="w-full bg-white bg-opacity-0 fixed top-0 z-20 backdrop-blur-sm text-white p-4">
+        <header className="max-w-full  bg-white bg-opacity-0 fixed top-0 z-20 backdrop-blur-sm text-white p-4">
             <nav className="flex justify-between items-center">
                 {/* Navigation Menu */}
                 <ul className="flex space-x-6 bg-transparent text-sm sm:text-base lg:text-xl overflow-x-auto whitespace-nowrap scrollbar-hide">
