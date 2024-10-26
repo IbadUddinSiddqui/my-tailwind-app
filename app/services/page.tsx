@@ -122,7 +122,7 @@ const ServicesPage: React.FC = () => {
 </section>
       </div>
 
-      <div className=' bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg min-w-full m-0 '>
+      <div className=' bg-black bg-opacity-80 shadow-lg p-6 rounded-lg min-w-full m-0 '>
         {/* 5. Process Section */}
 
         <div className='flex'>
