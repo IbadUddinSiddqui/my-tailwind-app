@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @import "./styles/services.css";
+@import "./styles/contact.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

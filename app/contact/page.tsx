@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Header />
-      <div className="px-4 py-6 mx-auto max-w-lg mt-12 mb-12 bg-white rounded-lg shadow-md sm:px-6 md:px-8 lg:px-12 md:mt-20 md:mb-20">
+      <div className="px-4 py-6 mx-auto  mt-24 mb-12  bg-white rounded-lg shadow-md contact-box ">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-black text-center">Contact Us</h2>
         {statusMessage && <p className="mb-4 text-center text-green-500">{statusMessage}</p>}
         <form onSubmit={handleSubmit}>

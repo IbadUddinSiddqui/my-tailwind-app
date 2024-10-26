@@ -1,0 +1,21 @@
+.contact-box{
+    width: 36rem;
+}
+
+
+
+@media  (max-width:626px){
+    .contact-box{
+        width: 26rem;
+    }
+}
+@media  (max-width:430px){
+    .contact-box{
+        width: 20rem;
+    }
+}
+@media  (max-width:330px){
+    .contact-box{
+        width: 15rem;
+    }
+}
