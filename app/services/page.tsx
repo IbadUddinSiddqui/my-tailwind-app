@@ -22,7 +22,8 @@ const ServicesPage: React.FC = () => {
 
         {/* 2. List of Services */}
         <section className="max-w-6xl mx-auto py-12 px-6">
-          <h2 className="text-2xl font-semibold mb-8 ">What I Offer</h2>
+          <div className='max-w-full text-2xl sm:text-5xl md:text-5xl lg:text-5xl text-centre'> <h2 className=" font-semibold mb-8 text-center offer ">What I Offer</h2></div>
+
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "  >
             <div className=" bg-[#2d67cd]  bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"  >
               <p><Image  src='/images/web-dev.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
