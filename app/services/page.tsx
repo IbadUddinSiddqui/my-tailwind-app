@@ -6,28 +6,27 @@ import FaqCard from '../components/FaqCard/FaqCard';
 import TestimonialSection from '../components/TestimonialSection/TestimonialSection';
 import Footer from '../components/Footer/Footer';
 
-
 const ServicesPage: React.FC = () => {
   return (
     <>
       <Header />
 
 
-      <div className="min-h-screen bg-transparent m-14 text-white">  {/* Changed overall text to white */}
+      <div className="min-h-screen max-w-full bg-transparent m-14  text-white">  {/* Changed overall text to white */}
 
         {/* 1. Headline / Introduction */}
-<header className="text-center py-16 bg-transparent">
-  <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">My Web Development Services</h1>
-  <p className="text-lg mt-4 sm:text-xl">Custom Websites, Web Apps, UI/UX Design, and more!</p>
+<header className="text-center py-16  service-heading">
+  <h1 className="text-3xl font-extrabold md:text-6xl lg:text-7xl text-centre ml-[-22px] ">My Web Development Services</h1>
+  <p className="text-lg mt-4 sm:text-xl service-heading">Custom Websites, Web Apps, UI/UX Design, and more!</p>
 </header>
 
         {/* 2. List of Services */}
         <section className="max-w-6xl mx-auto py-12 px-6">
-          <h2 className="text-3xl font-semibold mb-8">What I Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[#2d67cd] flex-inline bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+          <h2 className="text-2xl font-semibold mb-8 ">What I Offer</h2>
+          <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "  >
+            <div className=" bg-[#2d67cd]  bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"  >
               <p><Image  src='/images/web-dev.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
-              <h3 className="text-xl font-semibold mb-2">Website Development</h3>
+              <h3 className="text-base  font-semibold mb-2">Website Development</h3>
               <p className='text-base'>`I build custom, responsive websites that look great on any device, using modern tools and techniques.`</p>
             </div>
             <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
@@ -193,7 +192,7 @@ const ServicesPage: React.FC = () => {
         </section>
 
         {/* 11. Contact Form */}
-        <div className='inline-flex mt-14'>
+        <div className='inline-flex mt-14 max-w-full'>
         <section className="bg-transparent dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md">
@@ -223,8 +222,8 @@ const ServicesPage: React.FC = () => {
         </div>
       </div>
     </section>
-    <div className='flex mx-auto my-auto float-right'>
-    <div className="contact-card ">
+    <div className=' mx-auto my-auto hidden sm:flex '>
+    <div className=" ">
       <h2 className='text-white'>Ibad Uddin</h2>
       <p>
         📧 <strong className='text-white' >Email:</strong> <a  className='text-blue-500' href="mailto:ibaduddinsiddiqui418@gmail.com">ibaduddinsiddiqui418@gmail.com</a>
