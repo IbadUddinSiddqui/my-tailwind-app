@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 export default function HeroSection1() {
   return (
     <>
@@ -6,7 +7,22 @@ export default function HeroSection1() {
         <div className="flex flex-col  w-full justify-center items-center h-full bg-black bg-opacity-30 text-white p-4 ">
           <div className="relative z-10 text-center px-6">
             {/* Name or Title */}
-            <h1 className="text-6xl font-extrabold mb-4">Ibad Uddin</h1>
+            
+            <h1 className="text-6xl font-extrabold mb-4">I am</h1> <h1 className="text-6xl font-extrabold mb-4">
+              <Typewriter
+              options={{
+                strings:[
+                  "Web Developer",
+                  "Software Engineer",
+                  "Web Designer",
+                  "Ibad Uddin"
+                ],
+                autoStart:true,
+                loop:true,
+              }}
+              />
+              </h1> 
+            
 
             {/* Brief Introduction */}
             <p className="text-xl mb-6 max-w-2xl mx-auto">

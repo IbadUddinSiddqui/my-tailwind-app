@@ -6,6 +6,7 @@ import FaqCard from '../components/FaqCard/FaqCard';
 import TestimonialSection from '../components/TestimonialSection/TestimonialSection';
 import Footer from '../components/Footer/Footer';
 
+
 const ServicesPage: React.FC = () => {
   return (
     <>
