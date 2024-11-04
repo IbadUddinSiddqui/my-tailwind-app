@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCard = () => {
   return (
-    <div className="w-full max-w-sm p-4   m-auto border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 bg-[#2d67cd] bg-gradient-to-r from-black to-transparent  hover:shadow-slate-100">
+    <div className="w-full max-w-sm p-4   m-auto border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 bg-[#2d67cd] bg-gradient-to-r from-black to-transparent  hover:shadow-slate-100 transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
       <h5 className="mb-4 text-xl font-medium text-white dark:text-gray-400">
         Standard plan
       </h5>

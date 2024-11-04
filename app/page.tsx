@@ -21,8 +21,7 @@ const HomePage = () => {
       }`}
     >
     <HeroSection1/>  
-    <HeroSection2/>
-     <HeroSection3/>
+ {/* Would add hero sections 2 and 3 later on */}
      <Footer />
     </div></>
   );

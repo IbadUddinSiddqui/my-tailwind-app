@@ -17,9 +17,14 @@ const config: Config = {
           '0%, 100%': { boxShadow: '0 0 15px rgba(0, 255, 255, 0.6)' },
           '50%': { boxShadow: '0 0 30px rgba(0, 255, 255, 1)' },
         },
+        flip: {
+          '0%': { transform: 'rotateY(0)' },
+          '100%': { transform: 'rotateY(180deg)' },
+        },
       },
       animation: {
         glow: 'glow 2s ease-in-out infinite',
+        flip: 'flip 0.6s ease-in-out',
       },
     
     },

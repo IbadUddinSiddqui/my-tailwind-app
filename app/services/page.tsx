@@ -5,6 +5,7 @@ import PricingCard from '../components/PricingCard/PricingCard';
 import FaqCard from '../components/FaqCard/FaqCard';
 import TestimonialSection from '../components/TestimonialSection/TestimonialSection';
 import Footer from '../components/Footer/Footer';
+import Link from 'next/link';
 
 
 const ServicesPage: React.FC = () => {
@@ -104,22 +105,45 @@ const ServicesPage: React.FC = () => {
 
         {/* 4. Portfolio Links */}
     {/* 4. Portfolio Links */}
-<section className="max-w-6xl mx-auto py-12 px-6">
+<section className="max-w-6xl mx-auto py-12 px-6 justify-center">
   <h2 className="text-3xl font-semibold mb-8 text-center">My Portfolio</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-shadow duration-300">
-      <h3 className="text-xl font-semibold mb-2">E-commerce Platform</h3>
-      <p className='text-base'>Built a fully functional e-commerce platform with Shopify integration and custom features.</p>
+  <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8">
+    
+    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100   transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
+     
+    <Link
+      href="https://hackathon-resume-builder-ibad.vercel.app/"
+      target='_blank' > 
+        <h3 className="text-xl font-semibold mb-2 text-center">Resume Builder</h3>
+      <div className='flex justify-center items-center'>
+      <Image
+      width={400}
+      height={300}
+      src="/images/builder.png"
+      alt='Resume Builder Image'
+      /></div>
+      <p className='text-base'>Built a fully functional Working Resume Builder for your Perfect Resume.</p>
+     </Link>
     </div>
-    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-shadow duration-300">
-      <h3 className="text-xl font-semibold mb-2">Web Application for Analytics</h3>
-      <p className='text-base'>Developed a React-based app for real-time data analytics.</p>
+
+    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100   transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
+     
+    <Link
+      href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
+      target='_blank' > 
+        <h3 className="text-xl font-semibold mb-2 text-center">Demo Portfolio</h3>
+      <div className='flex justify-center items-center'>
+      <Image
+      width={400}
+      height={300}
+      src="/images/Portfolio.png"
+      alt='Resume Builder Image'
+      /></div>
+      <p className='text-base'>Developed a  demo portfolio with scratch HTML CSS and typescript to refine my skills.</p>
+     </Link>
     </div>
-    {/* Add more portfolio items here if needed */}
-    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-shadow duration-300">
-      <h3 className="text-xl font-semibold mb-2">Mobile App Development</h3>
-      <p className='text-base'>Created a cross-platform mobile app using React Native.</p>
-    </div>
+   
+   
   </div>
 </section>
       </div>
@@ -128,11 +152,11 @@ const ServicesPage: React.FC = () => {
         {/* 5. Process Section */}
 
         <div className='flex'>
-          <section className=" bg-[#2d67cd] mx-auto bg-gradient-to-r from-black to-transparent shadow-lg py-12 rounded-lg hover:shadow-slate-100 inline-block">
+          <section className=" bg-[#2d67cd] mx-auto bg-gradient-to-r from-black to-transparent shadow-lg py-12 rounded-lg hover:shadow-slate-100 inline-block transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out ">
             <h2 className="text-3xl font-semibold text-center mb-6 text-white">
               My Process
             </h2>
-            <div className="max-w-4xl mx-auto space-y-4 text-center py-12 px-6 text-lg text-white bg-opacity-75 rounded-lg">
+            <div className="max-w-4xl mx-auto space-y-4 text-center py-12 px-6 text-lg text-white bg-opacity-75 rounded-lg ">
               <p >
                 <strong>1. Discovery:</strong> I start by understanding your business needs and goals.
               </p>
@@ -156,19 +180,19 @@ const ServicesPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-6 text-white">Why Choose Me?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
                 <h3 className="text-xl  text-white font-semibold mb-4">Expertise</h3>
                 <p className="text-white">
                   I have a strong foundation in web development, specializing in JavaScript, TypeScript, and React.
                 </p>
               </div>
-              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
                 <h3 className="text-xl text-white  font-semibold mb-4">Problem-Solving</h3>
                 <p className="text-white">
                   I excel at identifying problems and implementing efficient solutions, ensuring a smooth user experience.
                 </p>
               </div>
-              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+              <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100 transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
                 <h3 className="text-xl text-white  font-semibold mb-4">Passion</h3>
                 <p className="text-white">
                   I am passionate about continuous learning and staying updated with the latest industry trends and technologies.
@@ -177,11 +201,12 @@ const ServicesPage: React.FC = () => {
             </div>
           </div>
         </section>
+        
 
         {/* 7. Testimonials/Reviews */}
         <TestimonialSection />
         {/* 8. Pricing */}
-        <section className=" text-white max-w-6xl mx-auto py-12 px-6 text-center">
+        <section className=" text-white max-w-6xl mx-auto py-12 px-6 text-center ">
         <h2 className='text-4xl font-bold mb-8 text-white'> Pricing</h2>
           < PricingCard />
 
