@@ -109,38 +109,47 @@ const ServicesPage: React.FC = () => {
   <h2 className="text-3xl font-semibold mb-8 text-center">My Portfolio</h2>
   <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8">
     
-    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100   transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
-     
-    <Link
-      href="https://hackathon-resume-builder-ibad.vercel.app/"
-      target='_blank' > 
-        <h3 className="text-xl font-semibold mb-2 text-center">Resume Builder</h3>
-      <div className='flex justify-center items-center'>
+  <div className="relative group ">
+      {/* Image */}
       <Image
       width={400}
-      height={300}
-      src="/images/builder.png"
-      alt='Resume Builder Image'
-      /></div>
-      <p className='text-base'>Built a fully functional Working Resume Builder for your Perfect Resume.</p>
-     </Link>
-    </div>
+      height={400}
+        src="/images/builder.png"
+        alt="Website Preview"
+        className="w-full h-full object-cover rounded-lg"
+      />
 
-    <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100   transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
-     
-    <Link
-      href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
-      target='_blank' > 
-        <h3 className="text-xl font-semibold mb-2 text-center">Demo Portfolio</h3>
-      <div className='flex justify-center items-center'>
+      {/* Overlay */}
+      <Link
+        href="https://hackathon-resume-builder-ibad.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+      >
+        <span className="text-white text-lg font-semibold">Resume Builder</span>
+      </Link>
+    </div>
+   
+
+    <div className="relative group ">
+      {/* Image */}
       <Image
       width={400}
-      height={300}
-      src="/images/Portfolio.png"
-      alt='Resume Builder Image'
-      /></div>
-      <p className='text-base'>Developed a  demo portfolio with scratch HTML CSS and typescript to refine my skills.</p>
-     </Link>
+      height={400}
+        src="/images/Portfolio.png"
+        alt="Website Preview"
+        className="w-full h-full object-cover rounded-lg"
+      />
+
+      {/* Overlay */}
+      <Link
+        href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+      >
+        <span className="text-white text-lg font-semibold">Demo Portfolio</span>
+      </Link>
     </div>
    
    

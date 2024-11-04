@@ -14,7 +14,7 @@ export default function HeroSection1() {
                 strings:[
                   "Web Developer",
                   "Software Engineer",
-                  "Web Designer",
+                  "UI/UX Designer",
                   "Ibad Uddin"
                 ],
                 autoStart:true,
@@ -44,13 +44,13 @@ export default function HeroSection1() {
                 href="https://github.com/IbadUddinSiddqui"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white -mt-[5px] hover:text-blue-400"
+                className="text-white -mt-[5px] hover:text-blue-400 transition-transform hover:scale-105  duration-700ease-in-out"
               >
                 <Image
-                  src="/images/git.png"
+                  src="/images/git1.png"
                   alt="Github"
-                  width={75}
-                  height={75}
+                  width={60}
+                  height={60}
                 />
                 GitHub
               </a>
@@ -58,13 +58,13 @@ export default function HeroSection1() {
                 href="https://instagram.com/ibad_uddin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-blue-400"
+                className="text-white hover:text-blue-400 transition-transform hover:scale-105  duration-700ease-in-out"
               >
                 <Image
-                  src="/images/instagram.png" // Path to your image
+                  src="/images/insta1.png" // Path to your image
                   alt="Instagram"
-                  width={50} // Image width in pixels
-                  height={50} // Image height in pixels
+                  width={75} // Image width in pixels
+                  height={75} // Image height in pixels
                 />
                 Instagram{" "}
               </a>
@@ -73,7 +73,7 @@ export default function HeroSection1() {
                 href="https://www.linkedin.com/in/ibad-uddin-856276259/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-blue-400 hover:shadow-indigo-600 "
+                className="text-white hover:text-blue-400 hover:shadow-indigo-600 transition-transform hover:scale-105  duration-700ease-in-out "
               >
                 <Image
                   src="/images/in.png"

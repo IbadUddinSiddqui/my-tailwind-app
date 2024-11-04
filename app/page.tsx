@@ -3,8 +3,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from 'react';
 import HeroSection1 from "./components/HeroSections/HeroSection1/HeroSection1";
-import HeroSection2 from "./components/HeroSections/HeroSection2/HeroSection2";
-import HeroSection3 from "./components/HeroSections/HeroSection3/HeroSection3";
+// import HeroSection2 from "./components/HeroSections/HeroSection2/HeroSection2";
+// import HeroSection3 from "./components/HeroSections/HeroSection3/HeroSection3";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
