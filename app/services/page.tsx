@@ -124,9 +124,10 @@ const ServicesPage: React.FC = () => {
         href="https://hackathon-resume-builder-ibad.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+        className="absolute inset-0 bg-black bg-opacity-60 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
       >
-        <span className="text-white text-lg font-semibold">Resume Builder</span>
+        <h3 className="text-white text-lg font-semibold text-center mt-24 mb-2 ">Resume Builder</h3>
+        <p className='text-white text-base text-center justify-center'>Get Your Resume Ready in a few clicks....</p>
       </Link>
     </div>
    
@@ -146,9 +147,10 @@ const ServicesPage: React.FC = () => {
         href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
-      >
-        <span className="text-white text-lg font-semibold">Demo Portfolio</span>
+        className="absolute inset-0 bg-black bg-opacity-60 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+        >
+          <h3 className="text-white text-lg font-semibold text-center mt-24 mb-2 ">Demo Portfolio</h3>
+          <p className='text-white text-base text-center justify-center'>Demo Portfolio using scratch HTML CSS TS....</p>
       </Link>
     </div>
    
