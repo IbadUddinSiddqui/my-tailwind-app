@@ -12,6 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 15px rgba(0, 255, 255, 0.6)' },
+          '50%': { boxShadow: '0 0 30px rgba(0, 255, 255, 1)' },
+        },
+      },
+      animation: {
+        glow: 'glow 2s ease-in-out infinite',
+      },
+    
     },
   },
   plugins: [],

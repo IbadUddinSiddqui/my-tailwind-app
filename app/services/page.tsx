@@ -26,32 +26,32 @@ const ServicesPage: React.FC = () => {
           <div className='max-w-full text-2xl sm:text-5xl md:text-5xl lg:text-5xl text-centre'> <h2 className=" font-semibold mb-8 text-center offer ">What I Offer</h2></div>
 
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "  >
-            <div className=" bg-[#2d67cd]  bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100"  >
+            <div className=" bg-[#2d67cd]  bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out"  >
               <p><Image  src='/images/web-dev.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-base  font-semibold mb-2">Website Development</h3>
-              <p className='text-base'>`I build custom, responsive websites that look great on any device, using modern tools and techniques.`</p>
+              <p className='text-base'>I build custom, responsive websites that look great on any device, using modern tools and techniques.</p>
             </div>
-            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100   transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out ">
               <p><Image  src='/images/web-app.png' alt='Web App Development' width={200} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-xl font-semibold mb-2">Web Application Development</h3>
               <p  className='text-base'>Creating full-featured web apps using React, Next.js, and other top frameworks.</p>
             </div>
-            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out ">
               <p><Image   src='/images/e-com.png' alt='E-commerce' width={250} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-xl font-semibold mb-2 mt-12">E-Commerce Solutions</h3>
               <p  className='text-base'>Secure and scalable e-commerce websites built with Shopify or custom solutions.</p>
             </div>
-            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out ">
               <p><Image  src='/images/uiux.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-xl font-semibold mb-2 mt-8">UI/UX Design</h3>
               <p className='text-base' >Beautiful and user-friendly interfaces designed to improve user engagement.</p>
             </div>
-            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out ">
               <p><Image  src='/images/seo.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
               <p className='text-base'>Using SEO best practices to help your site rank better in search engines.</p>
             </div>
-            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100">
+            <div className="bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out ">
               <p><Image  src='/images/main&supp.png' alt='Web Development' width={200} height={150} className='mx-auto my-auto' /></p>
               <h3 className="text-xl font-semibold mb-2">Maintenance & Support</h3>
               <p className='text-base'>Ongoing support and updates to keep your site running smoothly.</p>
@@ -66,35 +66,35 @@ const ServicesPage: React.FC = () => {
     I work with the latest technologies to build high-quality web solutions.
   </p>
   <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 sm:px-6 lg:px-8">
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML5" width={200} height={200} className="mx-auto" />
       HTML5
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS3" width={200} height={200} className="mx-auto" />
       CSS3
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" width={200} height={200} className="mx-auto" />
       JavaScript
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="TypeScript" width={200} height={200} className="mx-auto" />
       TypeScript
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" width={200} height={200} className="mx-auto" />
       React
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" width={200} height={200} className="mx-auto" />
       Next.js
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width={200} height={200} className="mx-auto" />
       Node.js
     </span>
-    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100">
+    <span className="text-xl bg-[#2d67cd] bg-gradient-to-r from-black to-transparent shadow-lg p-4 md:p-6 rounded-lg hover:shadow-slate-100  transition-transform transform hover:scale-105 hover:shadow-[0px_0px_15px_5px_rgba(0,255,255,0.6)] hover:animate-glow duration-300 ease-in-out">
       <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind CSS" width={200} height={200} className="mx-auto" />
       Tailwind CSS
     </span>
