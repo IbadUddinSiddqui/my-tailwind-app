@@ -19,6 +19,7 @@ export default function HeroSection1() {
                 ],
                 autoStart:true,
                 loop:true,
+                delay:250
               }}
               />
               </h1> 
