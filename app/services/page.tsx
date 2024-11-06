@@ -109,51 +109,63 @@ const ServicesPage: React.FC = () => {
   <h2 className="text-3xl font-semibold mb-8 text-center">My Portfolio</h2>
   <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8">
     
-  <div className="relative group ">
-      {/* Image */}
-      <Image
-      width={400}
-      height={400}
-        src="/images/builder.png"
-        alt="Website Preview"
-        className="w-full h-full object-cover rounded-lg"
-      />
+  <div className="relative group w-full sm:w-[300px] md:w-[350px] lg:w-[400px]">
+  {/* Image */}
+  <Image
+    width={400}
+    height={400}
+    src="/images/builder.png"
+    alt="Website Preview"
+    className="w-full h-full object-cover rounded-lg"
+  />
 
-      {/* Overlay */}
-      <Link
-        href="https://hackathon-resume-builder-ibad.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute inset-0 bg-black bg-opacity-60 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
-      >
-        <h3 className="text-white text-lg font-semibold text-center mt-24 mb-2 ">Resume Builder</h3>
-        <p className='text-white text-base text-center justify-center'>Get Your Resume Ready in a few clicks....</p>
-      </Link>
+  {/* Overlay */}
+  <Link
+    href="https://hackathon-resume-builder-ibad.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4"
+  >
+    <div className="text-center">
+      <h3 className="text-white text-lg md:text-base sm:text-sm font-semibold mb-2">
+        Resume Builder
+      </h3>
+      <p className="text-white text-base md:text-sm sm:text-xs">
+       Building resume with just clicks......
+      </p>
     </div>
-   
+  </Link>
+</div>
 
-    <div className="relative group ">
-      {/* Image */}
-      <Image
-      width={400}
-      height={400}
-        src="/images/Portfolio.png"
-        alt="Website Preview"
-        className="w-full h-full object-cover rounded-lg"
-      />
 
-      {/* Overlay */}
-      <Link
-        href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute inset-0 bg-black bg-opacity-60 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
-        >
-          <h3 className="text-white text-lg font-semibold text-center mt-24 mb-2 ">Demo Portfolio</h3>
-          <p className='text-white text-base text-center justify-center'>Demo Portfolio using scratch HTML CSS TS....</p>
-      </Link>
+    <div className="relative group w-full sm:w-[300px] md:w-[350px] lg:w-[400px]">
+  {/* Image */}
+  <Image
+    width={400}
+    height={400}
+    src="/images/Portfolio.png"
+    alt="Website Preview"
+    className="w-full h-full object-cover rounded-lg"
+  />
+
+  {/* Overlay */}
+  <Link
+    href="https://ibaduddinsiddqui.github.io/My-Portfolio-Website/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg p-4"
+  >
+    <div className="text-center">
+      <h3 className="text-white text-lg md:text-base sm:text-sm font-semibold mb-2">
+        Demo Portfolio
+      </h3>
+      <p className="text-white text-base md:text-sm sm:text-xs">
+        Demo Portfolio using scratch HTML CSS TS...
+      </p>
     </div>
-   
+  </Link>
+</div>
+
    
   </div>
 </section>
